@@ -19,5 +19,6 @@ dfs(State, [Action|Actions], Visited):-
     write(Action), write(' : '), write(State1), nl, 
     dfs(State1, Actions, [State1|Visited]).
 
+
 % To run the program
-% start(State), dfs(State, Actions, [State]).
+% ?- start(State), dfs(State, Actions, [State]).
