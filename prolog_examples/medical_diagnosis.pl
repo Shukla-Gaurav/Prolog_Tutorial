@@ -4,13 +4,13 @@ disease(bronchitis).
 disease(pneumonia).
 
 % Symptoms of respiratory diseases
-symptom(asthma, shortness_of_breath).
-symptom(asthma, wheezing).
-symptom(bronchitis, cough).
-symptom(bronchitis, chest_pain).
-symptom(pneumonia, fever).
-symptom(pneumonia, cough).
-symptom(pneumonia, chest_pain).
+symptom(patient1, shortness_of_breath).
+symptom(patient1, wheezing).
+symptom(patient2, cough).
+symptom(patient2, chest_pain).
+symptom(patient3, fever).
+symptom(patient3, cough).
+symptom(patient4, chest_pain).
 
 % Treatment recommendations for respiratory diseases
 treatment(asthma, inhalers).

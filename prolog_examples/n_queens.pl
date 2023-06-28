@@ -17,8 +17,8 @@ safe([Queen|Others]):-
 
 noattack(_, [], _).
 noattack(Y, [Y1|Ylist], Xdist):-
-    Y1-Y \= Xdist,
-    Y-Y1 \= Xdist,
+    not(Xdist is Y1 - Y),
+    not(Xdist is Y - Y1),
     Dist1 is Xdist + 1,
     noattack(Y, Ylist, Dist1).
 
